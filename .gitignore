@@ -1,0 +1,17 @@
+# dbt generated packages
+dbt_packages/
+
+# dbt target folder
+target/
+
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Logs and temp
+logs/
+*.log
+
+# IDE files
+.vscode/
+.idea/
