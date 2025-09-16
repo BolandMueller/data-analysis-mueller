@@ -33,4 +33,5 @@ models:
   mueller_analysis:
     # Config indicated by + and applies to all files under models/example/
     example:
-      +materialized: view
+     # The `example` model config was removed because no model matches this path.
+     # If you add models under models/example/ later, re-add their configs here.
