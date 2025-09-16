@@ -1,0 +1,22 @@
+# Example profiles.yml for local development
+# Do NOT commit your real credentials. Use environment variables or a secrets manager.
+
+mueller_analysis:
+  outputs:
+    dev:
+      type: postgres
+      host: ${DB_HOST:-your-db-host}
+      user: ${DB_USER:-your_user}
+      pass: ${DB_PASS:-your_password}
+      port: ${DB_PORT:-5432}
+      dbname: ${DB_NAME:-your_db}
+      schema: ${DB_SCHEMA:-dev_mueller}
+      threads: 4
+      keepalives_idle: 0
+  target: dev
+
+# To use this file locally:
+# 1. Copy to ~/.dbt/profiles.yml and replace values with environment variables or real credentials.
+# 2. Or export environment variables and use the above template directly.
+# Example (PowerShell):
+# $env:DB_HOST = "pgsql.mueller1875.com"; $env:DB_USER = "readonly_user"; $env:DB_PASS = "<secret>"; dbt debug
