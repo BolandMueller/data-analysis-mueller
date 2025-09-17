@@ -4,7 +4,8 @@
 
 $required = @('DB_HOST','DB_USER','DB_PASS','DB_PORT','DB_NAME','DB_SCHEMA')
 foreach ($r in $required) {
-  if (-not $env:$r) { Write-Error "Missing env var $r"; exit 1 }
+  # Use Test-Path on the env: provider to avoid invalid dynamic variable reference
+  if (-not (Test-Path "env:$r")) { Write-Error "Missing env var $r"; exit 1 }
 }
 
 $profiles = @"
