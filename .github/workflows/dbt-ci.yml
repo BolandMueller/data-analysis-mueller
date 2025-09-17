@@ -26,21 +26,13 @@ jobs:
           pip install dbt-postgres==1.10.11
           pip install -r requirements.txt || true
 
-      - name: Install deps from packages.yml
-        run: dbt deps
-
-      - name: dbt parse
-        run: dbt parse
-
-      - name: dbt compile
-        run: dbt compile
-
-      - name: dbt test
-        run: dbt test --profiles-dir ./
-        env:
-          DB_HOST: ${{ secrets.DB_HOST }}
-          DB_USER: ${{ secrets.DB_USER }}
-          DB_PASS: ${{ secrets.DB_PASS }}
-          DB_PORT: ${{ secrets.DB_PORT }}
-          DB_NAME: ${{ secrets.DB_NAME }}
-          DB_SCHEMA: ${{ secrets.DB_SCHEMA }}
+      - name: Run dbt wrapper script (PowerShell)
+        shell: pwsh
+        run: |
+          $env:DB_HOST = '${{ secrets.DB_HOST }}'
+          $env:DB_USER = '${{ secrets.DB_USER }}'
+          $env:DB_PASS = '${{ secrets.DB_PASS }}'
+          $env:DB_PORT = '${{ secrets.DB_PORT }}'
+          $env:DB_NAME = '${{ secrets.DB_NAME }}'
+          $env:DB_SCHEMA = '${{ secrets.DB_SCHEMA }}'
+          pwsh ./scripts/run-dbt-ci.ps1
