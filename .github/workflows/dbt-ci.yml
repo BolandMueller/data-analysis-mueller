@@ -26,6 +26,22 @@ jobs:
           pip install dbt-postgres==1.10.11
           pip install -r requirements.txt || true
 
+      - name: Install psql client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Run DB setup SQL (psql)
+        env:
+          PGPASSWORD: ${{ secrets.DB_PASS }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PORT: ${{ secrets.DB_PORT }}
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_USER: ${{ secrets.DB_USER }}
+        run: |
+          psql -h "$DB_HOST" -U "$DB_USER" -p "$DB_PORT" -d "$DB_NAME" \
+            -v DEV_PASS="'${{ secrets.DB_PASS }}'" \
+            -v READONLY_PASS="'${{ secrets.DB_PASS }}'" \
+            -f sql/db_setup/create_dev_schema_and_user.sql
+
       - name: Run dbt wrapper script (PowerShell)
         shell: pwsh
         run: |
@@ -35,4 +51,8 @@ jobs:
           $env:DB_PORT = '${{ secrets.DB_PORT }}'
           $env:DB_NAME = '${{ secrets.DB_NAME }}'
           $env:DB_SCHEMA = '${{ secrets.DB_SCHEMA }}'
+          # Provide DEV_PASS/READONLY_PASS if present, otherwise they will be handled in the wrapper (fallback to DB_PASS)
+          if ('${{ secrets.DEV_PASS }}' -ne '') { $env:DEV_PASS = '${{ secrets.DEV_PASS }}' }
+          if ('${{ secrets.READONLY_PASS }}' -ne '') { $env:READONLY_PASS = '${{ secrets.READONLY_PASS }}' }
+          $env:RUN_DB_SETUP = 'true'
           pwsh ./scripts/run-dbt-ci.ps1
