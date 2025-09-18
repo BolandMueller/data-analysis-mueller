@@ -66,14 +66,10 @@ if ($env:RUN_DB_SETUP -and $env:RUN_DB_SETUP.ToLower() -eq 'true') {
   Write-Host "DB setup SQL completed"
 }
 
-# Run dbt steps
+# Run dbt steps: install deps and build (materialize models, then run tests)
 dbt deps
-$dbtParse = & dbt parse
-if ($LASTEXITCODE -ne 0) { Write-Error "dbt parse failed"; exit $LASTEXITCODE }
-$dbtCompile = & dbt compile
-if ($LASTEXITCODE -ne 0) { Write-Error "dbt compile failed"; exit $LASTEXITCODE }
-$dbtTest = & dbt test
-if ($LASTEXITCODE -ne 0) { Write-Error "dbt test failed"; exit $LASTEXITCODE }
+$dbtBuild = & dbt build --profiles-dir . --target dev
+if ($LASTEXITCODE -ne 0) { Write-Error "dbt build failed"; exit $LASTEXITCODE }
 
 Write-Host "dbt steps completed successfully"
 
