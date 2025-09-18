@@ -52,7 +52,12 @@ if ($env:RUN_DB_SETUP -and $env:RUN_DB_SETUP.ToLower() -eq 'true') {
   # Run the SQL using PGPASSWORD for non-interactive auth (CI: safe when set from secrets)
   $env:PGPASSWORD = $env:DB_PASS
 
-  $psqlCmd = "psql -h `"$($env:DB_HOST)`" -U `"$($env:DB_USER)`" -p `"$($env:DB_PORT)`" -d `"$($env:DB_NAME)`" -v DEV_PASS='`"$devPassVar`"' -v READONLY_PASS='`"$roPassVar`"' -f sql/db_setup/create_dev_schema_and_user.sql"
+  if ($env:SKIP_CREATE_USERS -and $env:SKIP_CREATE_USERS.ToLower() -eq 'true') {
+    Write-Host "SKIP_CREATE_USERS is true — running schema-only SQL"
+    $psqlCmd = "psql -h `"$($env:DB_HOST)`" -U `"$($env:DB_USER)`" -p `"$($env:DB_PORT)`" -d `"$($env:DB_NAME)`" -f sql/db_setup/create_schema_only.sql"
+  } else {
+    $psqlCmd = "psql -h `"$($env:DB_HOST)`" -U `"$($env:DB_USER)`" -p `"$($env:DB_PORT)`" -d `"$($env:DB_NAME)`" -v DEV_PASS='`"$devPassVar`"' -v READONLY_PASS='`"$roPassVar`"' -f sql/db_setup/create_dev_schema_and_user.sql"
+  }
   Write-Host "Running: $psqlCmd"
   iex $psqlCmd
 

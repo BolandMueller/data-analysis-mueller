@@ -1,0 +1,12 @@
+mueller_analysis:
+  outputs:
+    dev:
+      type: postgres
+      host: pgsql.mueller1875.com
+      user: postgres
+      pass: Mueller1875
+      port: 5432
+      dbname: Mueller
+      schema: dev_mueller
+      threads: 4
+  target: dev

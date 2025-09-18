@@ -1588,3 +1588,1356 @@ having count(*) > 1
 [0m10:27:46.706577 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE76F62710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE76F627D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE76EE6490>]}
 [0m10:27:46.706577 [debug] [MainThread]: Flushing usage events
 [0m10:27:47.195158 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:31:42.611918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002189BA8A010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002189BCFFD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002189BA89B50>]}
+
+
+============================== 15:31:42.616703 | ad4b64f4-828c-4fa4-b63e-9397ea591198 ==============================
+[0m15:31:42.616703 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:31:42.621860 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt ', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'empty': 'None', 'log_path': 'c:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\kboland\\.dbt', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m15:31:42.783793 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ad4b64f4-828c-4fa4-b63e-9397ea591198', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002189BCD2310>]}
+[0m15:31:43.026466 [debug] [MainThread]: Set downloads directory='C:\Users\kboland\AppData\Local\Temp\dbt-downloads-iy2jrvoh'
+[0m15:31:43.026466 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:31:43.784906 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:31:43.787131 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:31:44.314720 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:31:44.321116 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json
+[0m15:31:44.842921 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json 200
+[0m15:31:44.848607 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json
+[0m15:31:45.386636 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json 200
+[0m15:31:45.390725 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:31:46.256831 [info ] [MainThread]: Installed from version 1.3.1
+[0m15:31:46.256831 [info ] [MainThread]: Up to date!
+[0m15:31:46.258337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'ad4b64f4-828c-4fa4-b63e-9397ea591198', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002189BD38490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002189BE62150>]}
+[0m15:31:46.258337 [info ] [MainThread]: Installing metaplane/dbt_expectations
+[0m15:31:47.422750 [info ] [MainThread]: Installed from version 0.10.9
+[0m15:31:47.423849 [info ] [MainThread]: Up to date!
+[0m15:31:47.423849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'ad4b64f4-828c-4fa4-b63e-9397ea591198', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002189BE32D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002189BCD14D0>]}
+[0m15:31:47.425257 [info ] [MainThread]: Installing godatadriven/dbt_date
+[0m15:31:48.120709 [info ] [MainThread]: Installed from version 0.16.1
+[0m15:31:48.121748 [info ] [MainThread]: Up to date!
+[0m15:31:48.121748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'ad4b64f4-828c-4fa4-b63e-9397ea591198', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002189BE1F110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002189BDE10D0>]}
+[0m15:31:48.124739 [debug] [MainThread]: Command `cli deps` succeeded at 15:31:48.124739 after 5.60 seconds
+[0m15:31:48.125737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021896A28250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021896A28650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021896A28610>]}
+[0m15:31:48.125737 [debug] [MainThread]: Flushing usage events
+[0m15:31:48.709145 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:40:57.680783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4472D1610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4472FFD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4472D3550>]}
+
+
+============================== 15:40:57.684774 | cee3a379-87aa-406f-b578-b3192cc0d07f ==============================
+[0m15:40:57.684774 [info ] [MainThread]: Running with dbt=1.10.11
+[0m15:40:57.685771 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\kboland\\.dbt', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'printer_width': '80', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m15:40:57.827935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cee3a379-87aa-406f-b578-b3192cc0d07f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4431B4110>]}
+[0m15:40:57.964487 [debug] [MainThread]: Set downloads directory='C:\Users\kboland\AppData\Local\Temp\dbt-downloads-gpmgw1wx'
+[0m15:40:57.965520 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m15:40:58.600681 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m15:40:58.603882 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m15:40:59.161127 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m15:40:59.166562 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json
+[0m15:40:59.789167 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json 200
+[0m15:40:59.793912 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json
+[0m15:41:00.469883 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json 200
+[0m15:41:00.474873 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m15:41:01.312880 [info ] [MainThread]: Installed from version 1.3.1
+[0m15:41:01.312880 [info ] [MainThread]: Up to date!
+[0m15:41:01.313962 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'cee3a379-87aa-406f-b578-b3192cc0d07f', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4472D0DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F445CBB350>]}
+[0m15:41:01.315015 [info ] [MainThread]: Installing metaplane/dbt_expectations
+[0m15:41:02.505613 [info ] [MainThread]: Installed from version 0.10.9
+[0m15:41:02.505613 [info ] [MainThread]: Up to date!
+[0m15:41:02.506826 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'cee3a379-87aa-406f-b578-b3192cc0d07f', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4474811D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F447481210>]}
+[0m15:41:02.506826 [info ] [MainThread]: Installing godatadriven/dbt_date
+[0m15:41:03.230797 [info ] [MainThread]: Installed from version 0.16.1
+[0m15:41:03.231837 [info ] [MainThread]: Up to date!
+[0m15:41:03.232837 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'cee3a379-87aa-406f-b578-b3192cc0d07f', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F447461F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F447462150>]}
+[0m15:41:03.237018 [debug] [MainThread]: Command `cli deps` succeeded at 15:41:03.237018 after 5.64 seconds
+[0m15:41:03.237018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F441008290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F441008090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F441008650>]}
+[0m15:41:03.238015 [debug] [MainThread]: Flushing usage events
+[0m15:41:03.852466 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:07:16.932054 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D154BEA310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D154E40610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D154E42650>]}
+
+
+============================== 16:07:16.936055 | d7e75e23-5002-43e4-9a79-723aacc293c8 ==============================
+[0m16:07:16.936055 [info ] [MainThread]: Running with dbt=1.10.11
+[0m16:07:16.937152 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'printer_width': '80', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\kboland\\.dbt', 'static_parser': 'True', 'write_json': 'True'}
+[0m16:07:17.080808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd7e75e23-5002-43e4-9a79-723aacc293c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D156033E90>]}
+[0m16:07:17.201831 [debug] [MainThread]: Set downloads directory='C:\Users\kboland\AppData\Local\Temp\dbt-downloads-566llfl9'
+[0m16:07:17.201831 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:07:17.826427 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:07:17.828473 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:07:18.356990 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:07:18.362801 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json
+[0m16:07:18.892976 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json 200
+[0m16:07:18.896007 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json
+[0m16:07:19.428174 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json 200
+[0m16:07:19.443726 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:07:20.269124 [info ] [MainThread]: Installed from version 1.3.1
+[0m16:07:20.270131 [info ] [MainThread]: Up to date!
+[0m16:07:20.271135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd7e75e23-5002-43e4-9a79-723aacc293c8', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D154E68190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D15607B410>]}
+[0m16:07:20.271135 [info ] [MainThread]: Installing metaplane/dbt_expectations
+[0m16:07:21.469735 [info ] [MainThread]: Installed from version 0.10.9
+[0m16:07:21.470740 [info ] [MainThread]: Up to date!
+[0m16:07:21.481892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd7e75e23-5002-43e4-9a79-723aacc293c8', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D154E95010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D15068D850>]}
+[0m16:07:21.482888 [info ] [MainThread]: Installing godatadriven/dbt_date
+[0m16:07:22.211009 [info ] [MainThread]: Installed from version 0.16.1
+[0m16:07:22.211009 [info ] [MainThread]: Up to date!
+[0m16:07:22.212133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd7e75e23-5002-43e4-9a79-723aacc293c8', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D154F415D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D154D733D0>]}
+[0m16:07:22.216122 [debug] [MainThread]: Command `cli deps` succeeded at 16:07:22.215124 after 5.37 seconds
+[0m16:07:22.216625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D154178C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D14FC145D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D14FC14050>]}
+[0m16:07:22.216625 [debug] [MainThread]: Flushing usage events
+[0m16:07:22.789552 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:08:42.457237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBA1C33710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBA15344D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBA1C08410>]}
+
+
+============================== 16:08:42.461229 | dbda00de-2830-4dc3-8d76-426149c7b67c ==============================
+[0m16:08:42.461229 [info ] [MainThread]: Running with dbt=1.10.11
+[0m16:08:42.462411 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt deps', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'None', 'quiet': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m16:08:42.628125 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dbda00de-2830-4dc3-8d76-426149c7b67c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBA1CD8DD0>]}
+[0m16:08:42.759143 [debug] [MainThread]: Set downloads directory='C:\Users\kboland\AppData\Local\Temp\dbt-downloads-2uz520at'
+[0m16:08:42.760185 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:08:43.388333 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:08:43.389371 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:08:43.932896 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:08:43.940368 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json
+[0m16:08:44.459786 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json 200
+[0m16:08:44.464403 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json
+[0m16:08:45.002910 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json 200
+[0m16:08:45.007898 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:08:45.820783 [info ] [MainThread]: Installed from version 1.3.1
+[0m16:08:45.821851 [info ] [MainThread]: Up to date!
+[0m16:08:45.823357 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dbda00de-2830-4dc3-8d76-426149c7b67c', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB9CE61C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBA1CCE590>]}
+[0m16:08:45.823357 [info ] [MainThread]: Installing metaplane/dbt_expectations
+[0m16:08:46.967710 [info ] [MainThread]: Installed from version 0.10.9
+[0m16:08:46.968713 [info ] [MainThread]: Up to date!
+[0m16:08:46.968713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dbda00de-2830-4dc3-8d76-426149c7b67c', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBA1C38A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB9FD26CD0>]}
+[0m16:08:46.970221 [info ] [MainThread]: Installing godatadriven/dbt_date
+[0m16:08:47.687985 [info ] [MainThread]: Installed from version 0.16.1
+[0m16:08:47.688988 [info ] [MainThread]: Up to date!
+[0m16:08:47.690295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'dbda00de-2830-4dc3-8d76-426149c7b67c', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBA1D73E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DBA1CDD4D0>]}
+[0m16:08:47.693343 [debug] [MainThread]: Command `dbt deps` succeeded at 16:08:47.693343 after 5.32 seconds
+[0m16:08:47.694344 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB9BC52B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB9BC52AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DB9BBD5C50>]}
+[0m16:08:47.694344 [debug] [MainThread]: Flushing usage events
+[0m16:08:48.244325 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:08:50.516709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5FCCD50D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5FCC11410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5FCCFBD50>]}
+
+
+============================== 16:08:50.520702 | b173aba9-cd32-4dd8-9763-42790b890fd1 ==============================
+[0m16:08:50.520702 [info ] [MainThread]: Running with dbt=1.10.11
+[0m16:08:50.521699 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt parse', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'empty': 'None', 'printer_width': '80', 'quiet': 'False', 'log_path': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m16:08:50.714702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b173aba9-cd32-4dd8-9763-42790b890fd1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5FCEF7650>]}
+[0m16:08:50.779528 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b173aba9-cd32-4dd8-9763-42790b890fd1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5F89E1550>]}
+[0m16:08:50.780562 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:08:51.240689 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m16:08:51.330403 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m16:08:51.330403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b173aba9-cd32-4dd8-9763-42790b890fd1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5FC65A490>]}
+[0m16:08:53.497345 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b173aba9-cd32-4dd8-9763-42790b890fd1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5FE666910>]}
+[0m16:08:53.501498 [info ] [MainThread]: Performance info: C:\Users\kboland\Mueller_git\data-analysis-mueller\target\perf_info.json
+[0m16:08:53.589057 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:08:53.605246 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:08:53.606748 [debug] [MainThread]: Command `dbt parse` succeeded at 16:08:53.606244 after 3.18 seconds
+[0m16:08:53.606748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5FC987F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5F7C92C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B5F7C92B50>]}
+[0m16:08:53.607747 [debug] [MainThread]: Flushing usage events
+[0m16:08:54.130470 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:08:56.453646 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C417DD52D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C417DD4F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C417DD6290>]}
+
+
+============================== 16:08:56.457197 | 35c50b45-a388-4bc0-ad10-3498ad292504 ==============================
+[0m16:08:56.457197 [info ] [MainThread]: Running with dbt=1.10.11
+[0m16:08:56.459196 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt compile', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True'}
+[0m16:08:56.681303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '35c50b45-a388-4bc0-ad10-3498ad292504', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C417760BD0>]}
+[0m16:08:56.746350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '35c50b45-a388-4bc0-ad10-3498ad292504', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C413ABD110>]}
+[0m16:08:56.748547 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:08:57.167968 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m16:08:57.423143 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:08:57.424504 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:08:57.462973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '35c50b45-a388-4bc0-ad10-3498ad292504', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C417F40110>]}
+[0m16:08:57.553877 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:08:57.556530 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:08:57.583779 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '35c50b45-a388-4bc0-ad10-3498ad292504', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4194C8550>]}
+[0m16:08:57.583779 [info ] [MainThread]: Found 2 models, 4 data tests, 826 macros
+[0m16:08:57.584883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '35c50b45-a388-4bc0-ad10-3498ad292504', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4192F4910>]}
+[0m16:08:57.587060 [info ] [MainThread]: 
+[0m16:08:57.587060 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:08:57.588063 [info ] [MainThread]: 
+[0m16:08:57.589067 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:08:57.594449 [debug] [ThreadPool]: Acquiring new postgres connection 'list_Mueller_dev_mueller'
+[0m16:09:00.299237 [debug] [ThreadPool]: Using postgres connection "list_Mueller_dev_mueller"
+[0m16:09:00.299237 [debug] [ThreadPool]: On list_Mueller_dev_mueller: BEGIN
+[0m16:09:00.300339 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:09:00.657277 [debug] [ThreadPool]: SQL status: BEGIN in 0.357 seconds
+[0m16:09:00.657277 [debug] [ThreadPool]: Using postgres connection "list_Mueller_dev_mueller"
+[0m16:09:00.658611 [debug] [ThreadPool]: On list_Mueller_dev_mueller: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "connection_name": "list_Mueller_dev_mueller"} */
+select
+      'Mueller' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_mueller'
+    union all
+    select
+      'Mueller' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_mueller'
+    union all
+    select
+      'Mueller' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_mueller'
+  
+[0m16:09:00.693991 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.035 seconds
+[0m16:09:00.694994 [debug] [ThreadPool]: On list_Mueller_dev_mueller: ROLLBACK
+[0m16:09:00.728111 [debug] [ThreadPool]: On list_Mueller_dev_mueller: Close
+[0m16:09:00.740124 [debug] [MainThread]: Using postgres connection "master"
+[0m16:09:00.741122 [debug] [MainThread]: On master: BEGIN
+[0m16:09:00.742119 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:09:01.063825 [debug] [MainThread]: SQL status: BEGIN in 0.321 seconds
+[0m16:09:01.063825 [debug] [MainThread]: Using postgres connection "master"
+[0m16:09:01.064857 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m16:09:01.102034 [debug] [MainThread]: SQL status: SELECT 17 in 0.037 seconds
+[0m16:09:01.103500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '35c50b45-a388-4bc0-ad10-3498ad292504', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C417761B10>]}
+[0m16:09:01.104618 [debug] [MainThread]: On master: ROLLBACK
+[0m16:09:01.137087 [debug] [MainThread]: On master: Close
+[0m16:09:01.148115 [debug] [Thread-1 (]: Began running node model.mueller_analysis.my_first_dbt_model
+[0m16:09:01.149210 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.mueller_analysis.my_first_dbt_model'
+[0m16:09:01.149670 [debug] [Thread-1 (]: Began compiling node model.mueller_analysis.my_first_dbt_model
+[0m16:09:01.157205 [debug] [Thread-1 (]: Writing injected SQL for node "model.mueller_analysis.my_first_dbt_model"
+[0m16:09:01.158204 [debug] [Thread-1 (]: Began executing node model.mueller_analysis.my_first_dbt_model
+[0m16:09:01.159203 [debug] [Thread-1 (]: Finished running node model.mueller_analysis.my_first_dbt_model
+[0m16:09:01.161577 [debug] [Thread-3 (]: Began running node model.mueller_analysis.my_second_dbt_model
+[0m16:09:01.161577 [debug] [Thread-4 (]: Began running node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:09:01.162736 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.mueller_analysis.my_second_dbt_model'
+[0m16:09:01.162736 [debug] [Thread-2 (]: Began running node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:09:01.163811 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m16:09:01.164325 [debug] [Thread-3 (]: Began compiling node model.mueller_analysis.my_second_dbt_model
+[0m16:09:01.164325 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321'
+[0m16:09:01.165369 [debug] [Thread-4 (]: Began compiling node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:09:01.168955 [debug] [Thread-3 (]: Writing injected SQL for node "model.mueller_analysis.my_second_dbt_model"
+[0m16:09:01.169876 [debug] [Thread-2 (]: Began compiling node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:09:01.182026 [debug] [Thread-4 (]: Writing injected SQL for node "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:09:01.189505 [debug] [Thread-2 (]: Writing injected SQL for node "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"
+[0m16:09:01.189505 [debug] [Thread-3 (]: Began executing node model.mueller_analysis.my_second_dbt_model
+[0m16:09:01.192011 [debug] [Thread-3 (]: Finished running node model.mueller_analysis.my_second_dbt_model
+[0m16:09:01.192011 [debug] [Thread-4 (]: Began executing node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:09:01.193173 [debug] [Thread-2 (]: Began executing node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:09:01.194173 [debug] [Thread-1 (]: Began running node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:09:01.194173 [debug] [Thread-3 (]: Began running node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:09:01.195169 [debug] [Thread-4 (]: Finished running node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:09:01.196203 [debug] [Thread-2 (]: Finished running node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:09:01.196203 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mueller_analysis.my_first_dbt_model, now test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778)
+[0m16:09:01.197368 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.mueller_analysis.my_second_dbt_model, now test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493)
+[0m16:09:01.198595 [debug] [Thread-1 (]: Began compiling node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:09:01.199639 [debug] [Thread-3 (]: Began compiling node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:09:01.204796 [debug] [Thread-1 (]: Writing injected SQL for node "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:09:01.210341 [debug] [Thread-3 (]: Writing injected SQL for node "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:09:01.212492 [debug] [Thread-1 (]: Began executing node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:09:01.212492 [debug] [Thread-3 (]: Began executing node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:09:01.213829 [debug] [Thread-1 (]: Finished running node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:09:01.213829 [debug] [Thread-3 (]: Finished running node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:09:01.216087 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:09:01.216087 [debug] [MainThread]: Connection 'list_Mueller_dev_mueller' was properly closed.
+[0m16:09:01.217171 [debug] [MainThread]: Connection 'test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+[0m16:09:01.217171 [debug] [MainThread]: Connection 'test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m16:09:01.217171 [debug] [MainThread]: Connection 'test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710' was properly closed.
+[0m16:09:01.218447 [debug] [MainThread]: Connection 'test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m16:09:01.219717 [debug] [MainThread]: Command end result
+[0m16:09:01.259735 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:09:01.262274 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:09:01.269038 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\run_results.json
+[0m16:09:01.270455 [debug] [MainThread]: Command `dbt compile` succeeded at 16:09:01.270455 after 4.90 seconds
+[0m16:09:01.271591 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C412D72C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C412CF5C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C412CF6990>]}
+[0m16:09:01.271591 [debug] [MainThread]: Flushing usage events
+[0m16:09:01.796892 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:09:04.130329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133A2038F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133A0D022D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133A2039E50>]}
+
+
+============================== 16:09:04.134321 | 4443a090-17d6-491d-92fc-b085046aa319 ==============================
+[0m16:09:04.134321 [info ] [MainThread]: Running with dbt=1.10.11
+[0m16:09:04.134321 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt test', 'log_format': 'default', 'use_colors': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m16:09:04.334315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4443a090-17d6-491d-92fc-b085046aa319', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001339CECB350>]}
+[0m16:09:04.401414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4443a090-17d6-491d-92fc-b085046aa319', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001339CCA07D0>]}
+[0m16:09:04.402504 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:09:04.818889 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m16:09:05.076942 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:09:05.078182 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:09:05.118043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4443a090-17d6-491d-92fc-b085046aa319', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133A26ED6D0>]}
+[0m16:09:05.210111 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:09:05.213536 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:09:05.268497 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4443a090-17d6-491d-92fc-b085046aa319', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133A28E3D90>]}
+[0m16:09:05.269866 [info ] [MainThread]: Found 2 models, 4 data tests, 826 macros
+[0m16:09:05.269866 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4443a090-17d6-491d-92fc-b085046aa319', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133A2706650>]}
+[0m16:09:05.272252 [info ] [MainThread]: 
+[0m16:09:05.273291 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:09:05.273291 [info ] [MainThread]: 
+[0m16:09:05.274345 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:09:05.278119 [debug] [ThreadPool]: Acquiring new postgres connection 'list_Mueller_dev_mueller'
+[0m16:09:05.416924 [debug] [ThreadPool]: Using postgres connection "list_Mueller_dev_mueller"
+[0m16:09:05.417921 [debug] [ThreadPool]: On list_Mueller_dev_mueller: BEGIN
+[0m16:09:05.417921 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:09:05.738338 [debug] [ThreadPool]: SQL status: BEGIN in 0.320 seconds
+[0m16:09:05.739434 [debug] [ThreadPool]: Using postgres connection "list_Mueller_dev_mueller"
+[0m16:09:05.739434 [debug] [ThreadPool]: On list_Mueller_dev_mueller: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "connection_name": "list_Mueller_dev_mueller"} */
+select
+      'Mueller' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_mueller'
+    union all
+    select
+      'Mueller' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_mueller'
+    union all
+    select
+      'Mueller' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_mueller'
+  
+[0m16:09:05.776017 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.035 seconds
+[0m16:09:05.777091 [debug] [ThreadPool]: On list_Mueller_dev_mueller: ROLLBACK
+[0m16:09:05.811032 [debug] [ThreadPool]: On list_Mueller_dev_mueller: Close
+[0m16:09:05.816024 [debug] [MainThread]: Using postgres connection "master"
+[0m16:09:05.817038 [debug] [MainThread]: On master: BEGIN
+[0m16:09:05.817038 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:09:06.131914 [debug] [MainThread]: SQL status: BEGIN in 0.314 seconds
+[0m16:09:06.131914 [debug] [MainThread]: Using postgres connection "master"
+[0m16:09:06.133129 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m16:09:06.170263 [debug] [MainThread]: SQL status: SELECT 17 in 0.036 seconds
+[0m16:09:06.178645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4443a090-17d6-491d-92fc-b085046aa319', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133A2B2A310>]}
+[0m16:09:06.180845 [debug] [MainThread]: On master: ROLLBACK
+[0m16:09:06.214623 [debug] [MainThread]: Using postgres connection "master"
+[0m16:09:06.216182 [debug] [MainThread]: On master: BEGIN
+[0m16:09:06.288183 [debug] [MainThread]: SQL status: BEGIN in 0.070 seconds
+[0m16:09:06.289359 [debug] [MainThread]: On master: COMMIT
+[0m16:09:06.289359 [debug] [MainThread]: Using postgres connection "master"
+[0m16:09:06.290374 [debug] [MainThread]: On master: COMMIT
+[0m16:09:06.323328 [debug] [MainThread]: SQL status: COMMIT in 0.032 seconds
+[0m16:09:06.324368 [debug] [MainThread]: On master: Close
+[0m16:09:06.332426 [debug] [Thread-1 (]: Began running node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:09:06.333433 [debug] [Thread-2 (]: Began running node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:09:06.333433 [debug] [Thread-3 (]: Began running node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:09:06.334442 [debug] [Thread-4 (]: Began running node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:09:06.334442 [info ] [Thread-1 (]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m16:09:06.335952 [info ] [Thread-2 (]: 2 of 4 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m16:09:06.336969 [info ] [Thread-3 (]: 3 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m16:09:06.337965 [info ] [Thread-4 (]: 4 of 4 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m16:09:06.338963 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m16:09:06.339963 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778'
+[0m16:09:06.341390 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321'
+[0m16:09:06.342389 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493'
+[0m16:09:06.343939 [debug] [Thread-1 (]: Began compiling node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:09:06.344944 [debug] [Thread-2 (]: Began compiling node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:09:06.344944 [debug] [Thread-3 (]: Began compiling node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:09:06.345943 [debug] [Thread-4 (]: Began compiling node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:09:06.364489 [debug] [Thread-1 (]: Writing injected SQL for node "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:09:06.370150 [debug] [Thread-2 (]: Writing injected SQL for node "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:09:06.377162 [debug] [Thread-3 (]: Writing injected SQL for node "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"
+[0m16:09:06.382001 [debug] [Thread-4 (]: Writing injected SQL for node "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:09:06.382520 [debug] [Thread-1 (]: Began executing node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:09:06.383845 [debug] [Thread-2 (]: Began executing node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:09:06.400769 [debug] [Thread-1 (]: Writing runtime sql for node "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:09:06.401803 [debug] [Thread-3 (]: Began executing node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:09:06.401803 [debug] [Thread-4 (]: Began executing node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:09:06.405918 [debug] [Thread-2 (]: Writing runtime sql for node "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:09:06.409497 [debug] [Thread-3 (]: Writing runtime sql for node "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"
+[0m16:09:06.409497 [debug] [Thread-1 (]: Using postgres connection "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:09:06.412995 [debug] [Thread-4 (]: Writing runtime sql for node "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:09:06.414248 [debug] [Thread-1 (]: On test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710: BEGIN
+[0m16:09:06.414248 [debug] [Thread-2 (]: Using postgres connection "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:09:06.415343 [debug] [Thread-3 (]: Using postgres connection "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"
+[0m16:09:06.415880 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:09:06.416910 [debug] [Thread-4 (]: Using postgres connection "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:09:06.416910 [debug] [Thread-2 (]: On test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778: BEGIN
+[0m16:09:06.416910 [debug] [Thread-3 (]: On test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321: BEGIN
+[0m16:09:06.418197 [debug] [Thread-4 (]: On test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493: BEGIN
+[0m16:09:06.419208 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:09:06.419208 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:09:06.420368 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:09:06.727181 [debug] [Thread-1 (]: SQL status: BEGIN in 0.312 seconds
+[0m16:09:06.728523 [debug] [Thread-4 (]: SQL status: BEGIN in 0.308 seconds
+[0m16:09:06.728523 [debug] [Thread-1 (]: Using postgres connection "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:09:06.729929 [debug] [Thread-4 (]: Using postgres connection "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:09:06.729929 [debug] [Thread-1 (]: On test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "node_id": "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from "Mueller"."dev_mueller"."my_first_dbt_model"
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:09:06.731012 [debug] [Thread-4 (]: On test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "node_id": "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Mueller"."dev_mueller"."my_second_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:09:06.733353 [debug] [Thread-3 (]: SQL status: BEGIN in 0.313 seconds
+[0m16:09:06.733353 [debug] [Thread-2 (]: SQL status: BEGIN in 0.314 seconds
+[0m16:09:06.734354 [debug] [Thread-3 (]: Using postgres connection "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"
+[0m16:09:06.734354 [debug] [Thread-2 (]: Using postgres connection "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:09:06.734354 [debug] [Thread-3 (]: On test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "node_id": "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Mueller"."dev_mueller"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:09:06.736310 [debug] [Thread-2 (]: On test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "node_id": "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from "Mueller"."dev_mueller"."my_second_dbt_model"
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:09:06.764296 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "dev_mueller.my_first_dbt_model" does not exist
+LINE 17: from "Mueller"."dev_mueller"."my_first_dbt_model"
+              ^
+
+[0m16:09:06.764296 [debug] [Thread-4 (]: Postgres adapter: Postgres error: relation "dev_mueller.my_second_dbt_model" does not exist
+LINE 18: from "Mueller"."dev_mueller"."my_second_dbt_model"
+              ^
+
+[0m16:09:06.765332 [debug] [Thread-1 (]: On test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710: ROLLBACK
+[0m16:09:06.765870 [debug] [Thread-4 (]: On test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493: ROLLBACK
+[0m16:09:06.768387 [debug] [Thread-3 (]: Postgres adapter: Postgres error: relation "dev_mueller.my_first_dbt_model" does not exist
+LINE 18: from "Mueller"."dev_mueller"."my_first_dbt_model"
+              ^
+
+[0m16:09:06.768387 [debug] [Thread-2 (]: Postgres adapter: Postgres error: relation "dev_mueller.my_second_dbt_model" does not exist
+LINE 17: from "Mueller"."dev_mueller"."my_second_dbt_model"
+              ^
+
+[0m16:09:06.769545 [debug] [Thread-3 (]: On test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+[0m16:09:06.770548 [debug] [Thread-2 (]: On test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778: ROLLBACK
+[0m16:09:06.798649 [debug] [Thread-1 (]: On test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m16:09:06.798649 [debug] [Thread-4 (]: On test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m16:09:06.802092 [debug] [Thread-3 (]: On test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321: Close
+[0m16:09:06.803123 [debug] [Thread-2 (]: On test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m16:09:06.929031 [debug] [Thread-3 (]: Database Error in test unique_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m16:09:06.930066 [debug] [Thread-1 (]: Database Error in test not_null_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m16:09:06.932226 [debug] [Thread-4 (]: Database Error in test unique_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m16:09:06.933263 [debug] [Thread-2 (]: Database Error in test not_null_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m16:09:06.933263 [error] [Thread-3 (]: 3 of 4 ERROR unique_my_first_dbt_model_id ...................................... [[31mERROR[0m in 0.59s]
+[0m16:09:06.934295 [error] [Thread-1 (]: 1 of 4 ERROR not_null_my_first_dbt_model_id .................................... [[31mERROR[0m in 0.60s]
+[0m16:09:06.935298 [error] [Thread-4 (]: 4 of 4 ERROR unique_my_second_dbt_model_id ..................................... [[31mERROR[0m in 0.59s]
+[0m16:09:06.936503 [error] [Thread-2 (]: 2 of 4 ERROR not_null_my_second_dbt_model_id ................................... [[31mERROR[0m in 0.60s]
+[0m16:09:06.937526 [debug] [Thread-3 (]: Finished running node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:09:06.937526 [debug] [Thread-1 (]: Finished running node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:09:06.938899 [debug] [Thread-4 (]: Finished running node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:09:06.938899 [debug] [Thread-2 (]: Finished running node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:09:06.939939 [debug] [Thread-7 (]: Marking all children of 'test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321' to be skipped because of status 'error'.  Reason: Database Error in test unique_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_first_dbt_model_id.sql.
+[0m16:09:06.942103 [debug] [Thread-7 (]: Marking all children of 'test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710' to be skipped because of status 'error'.  Reason: Database Error in test not_null_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_first_dbt_model_id.sql.
+[0m16:09:06.943358 [debug] [Thread-7 (]: Marking all children of 'test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493' to be skipped because of status 'error'.  Reason: Database Error in test unique_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_second_dbt_model_id.sql.
+[0m16:09:06.943888 [debug] [Thread-7 (]: Marking all children of 'test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778' to be skipped because of status 'error'.  Reason: Database Error in test not_null_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_second_dbt_model_id.sql.
+[0m16:09:06.944958 [debug] [MainThread]: Using postgres connection "master"
+[0m16:09:06.945983 [debug] [MainThread]: On master: BEGIN
+[0m16:09:06.945983 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:09:07.276196 [debug] [MainThread]: SQL status: BEGIN in 0.330 seconds
+[0m16:09:07.276196 [debug] [MainThread]: On master: COMMIT
+[0m16:09:07.277210 [debug] [MainThread]: Using postgres connection "master"
+[0m16:09:07.277210 [debug] [MainThread]: On master: COMMIT
+[0m16:09:07.310410 [debug] [MainThread]: SQL status: COMMIT in 0.032 seconds
+[0m16:09:07.310719 [debug] [MainThread]: On master: Close
+[0m16:09:07.311717 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:09:07.311717 [debug] [MainThread]: Connection 'list_Mueller_dev_mueller' was properly closed.
+[0m16:09:07.312734 [debug] [MainThread]: Connection 'test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710' was properly closed.
+[0m16:09:07.312734 [debug] [MainThread]: Connection 'test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+[0m16:09:07.312734 [debug] [MainThread]: Connection 'test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m16:09:07.313747 [debug] [MainThread]: Connection 'test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m16:09:07.313747 [info ] [MainThread]: 
+[0m16:09:07.315000 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 2.04 seconds (2.04s).
+[0m16:09:07.316040 [debug] [MainThread]: Command end result
+[0m16:09:07.356286 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:09:07.359731 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:09:07.366542 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\run_results.json
+[0m16:09:07.366542 [info ] [MainThread]: 
+[0m16:09:07.367867 [info ] [MainThread]: [31mCompleted with 4 errors, 0 partial successes, and 0 warnings:[0m
+[0m16:09:07.367867 [info ] [MainThread]: 
+[0m16:09:07.369231 [error] [MainThread]: [31mFailure in test unique_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)[0m
+[0m16:09:07.369231 [error] [MainThread]:   Database Error in test unique_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m16:09:07.370397 [info ] [MainThread]: 
+[0m16:09:07.370397 [info ] [MainThread]:   compiled code at target\compiled\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m16:09:07.371481 [info ] [MainThread]: 
+[0m16:09:07.371481 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)[0m
+[0m16:09:07.372681 [error] [MainThread]:   Database Error in test not_null_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m16:09:07.372681 [info ] [MainThread]: 
+[0m16:09:07.373791 [info ] [MainThread]:   compiled code at target\compiled\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m16:09:07.373791 [info ] [MainThread]: 
+[0m16:09:07.374968 [error] [MainThread]: [31mFailure in test unique_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)[0m
+[0m16:09:07.374968 [error] [MainThread]:   Database Error in test unique_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m16:09:07.375931 [info ] [MainThread]: 
+[0m16:09:07.375931 [info ] [MainThread]:   compiled code at target\compiled\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m16:09:07.377284 [info ] [MainThread]: 
+[0m16:09:07.377284 [error] [MainThread]: [31mFailure in test not_null_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)[0m
+[0m16:09:07.378372 [error] [MainThread]:   Database Error in test not_null_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m16:09:07.378372 [info ] [MainThread]: 
+[0m16:09:07.379478 [info ] [MainThread]:   compiled code at target\compiled\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m16:09:07.379478 [info ] [MainThread]: 
+[0m16:09:07.380515 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=4 SKIP=0 NO-OP=0 TOTAL=4
+[0m16:09:07.381610 [debug] [MainThread]: Command `dbt test` failed at 16:09:07.381610 after 3.33 seconds
+[0m16:09:07.381610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001339BED6950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133A2BBD610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000133A2B9C850>]}
+[0m16:09:07.382861 [debug] [MainThread]: Flushing usage events
+[0m16:09:07.878299 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:10:12.321127 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020074BE3210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020074BD1850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020074BE36D0>]}
+
+
+============================== 16:10:12.325757 | c55b0e04-7cc6-480d-bedf-61837befe65a ==============================
+[0m16:10:12.325757 [info ] [MainThread]: Running with dbt=1.10.11
+[0m16:10:12.325757 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'empty': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'printer_width': '80', 'log_path': 'c:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'profiles_dir': 'C:\\Users\\kboland\\.dbt'}
+[0m16:10:12.530198 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c55b0e04-7cc6-480d-bedf-61837befe65a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020072E6A1D0>]}
+[0m16:10:12.596129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c55b0e04-7cc6-480d-bedf-61837befe65a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002006F94E0D0>]}
+[0m16:10:12.597467 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:10:12.986107 [debug] [MainThread]: checksum: f3a15f20cd0e17be8ec6b80249cbdcbd069c0abe6ee56424d4c8bc1a8c4095f7, vars: {}, profile: , target: dev, version: 1.10.11
+[0m16:10:13.088202 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m16:10:13.089243 [debug] [MainThread]: previous checksum: f3a15f20cd0e17be8ec6b80249cbdcbd069c0abe6ee56424d4c8bc1a8c4095f7, current checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9
+[0m16:10:13.089243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c55b0e04-7cc6-480d-bedf-61837befe65a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020075306F50>]}
+[0m16:10:15.047308 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c55b0e04-7cc6-480d-bedf-61837befe65a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200751F44D0>]}
+[0m16:10:15.133502 [debug] [MainThread]: Wrote artifact WritableManifest to c:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:10:15.137254 [debug] [MainThread]: Wrote artifact SemanticManifest to c:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:10:15.157104 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c55b0e04-7cc6-480d-bedf-61837befe65a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002007576FC10>]}
+[0m16:10:15.158213 [info ] [MainThread]: Found 2 models, 4 data tests, 826 macros
+[0m16:10:15.159282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c55b0e04-7cc6-480d-bedf-61837befe65a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000200745E29D0>]}
+[0m16:10:15.160619 [warn ] [MainThread]: The selection criterion 'create_dev_schema_and_user' does not match any enabled nodes
+[0m16:10:15.161781 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:10:15.161781 [debug] [MainThread]: Command end result
+[0m16:10:15.253359 [debug] [MainThread]: Wrote artifact WritableManifest to c:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:10:15.256112 [debug] [MainThread]: Wrote artifact SemanticManifest to c:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:10:15.260765 [debug] [MainThread]: Wrote artifact RunExecutionResult to c:\Users\kboland\Mueller_git\data-analysis-mueller\target\run_results.json
+[0m16:10:15.261940 [debug] [MainThread]: Command `cli run` succeeded at 16:10:15.261940 after 3.02 seconds
+[0m16:10:15.262985 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002006E9D4290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002006E9D42D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002006E9D4250>]}
+[0m16:10:15.262985 [debug] [MainThread]: Flushing usage events
+[0m16:10:15.820817 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:32.868274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001454BBDEB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001454B89CD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001454BBD1590>]}
+
+
+============================== 16:25:32.872267 | 78619f3e-2973-4911-9127-6de2eb62f8d2 ==============================
+[0m16:25:32.872267 [info ] [MainThread]: Running with dbt=1.10.11
+[0m16:25:32.873241 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt deps', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m16:25:33.012807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '78619f3e-2973-4911-9127-6de2eb62f8d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001454BD0A950>]}
+[0m16:25:33.162141 [debug] [MainThread]: Set downloads directory='C:\Users\kboland\AppData\Local\Temp\dbt-downloads-1g20nml2'
+[0m16:25:33.162141 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m16:25:33.720333 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m16:25:33.722534 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m16:25:34.218676 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m16:25:34.224989 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json
+[0m16:25:34.734176 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json 200
+[0m16:25:34.739037 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json
+[0m16:25:35.245017 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json 200
+[0m16:25:35.250825 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m16:25:36.089573 [info ] [MainThread]: Installed from version 1.3.1
+[0m16:25:36.090645 [info ] [MainThread]: Up to date!
+[0m16:25:36.090645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '78619f3e-2973-4911-9127-6de2eb62f8d2', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001454B98A610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014549DC3110>]}
+[0m16:25:36.091981 [info ] [MainThread]: Installing metaplane/dbt_expectations
+[0m16:25:37.281072 [info ] [MainThread]: Installed from version 0.10.9
+[0m16:25:37.282396 [info ] [MainThread]: Up to date!
+[0m16:25:37.283579 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '78619f3e-2973-4911-9127-6de2eb62f8d2', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001454BD1F810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001454BD1F7D0>]}
+[0m16:25:37.283579 [info ] [MainThread]: Installing godatadriven/dbt_date
+[0m16:25:37.990752 [info ] [MainThread]: Installed from version 0.16.1
+[0m16:25:37.990752 [info ] [MainThread]: Up to date!
+[0m16:25:37.992203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '78619f3e-2973-4911-9127-6de2eb62f8d2', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001454BC39B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001454BC3A590>]}
+[0m16:25:37.995785 [debug] [MainThread]: Command `dbt deps` succeeded at 16:25:37.995785 after 5.21 seconds
+[0m16:25:37.995785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001454BB10D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014545BD5C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014545BD5C90>]}
+[0m16:25:37.996785 [debug] [MainThread]: Flushing usage events
+[0m16:25:38.512976 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:40.730701 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020694CD6150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020694CD5850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020694CD7390>]}
+
+
+============================== 16:25:40.734838 | 521630b5-f9bf-4c13-87f4-a411fcc0d44d ==============================
+[0m16:25:40.734838 [info ] [MainThread]: Running with dbt=1.10.11
+[0m16:25:40.735853 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt parse', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'log_cache_events': 'False', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'use_experimental_parser': 'False', 'printer_width': '80', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller'}
+[0m16:25:40.925386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '521630b5-f9bf-4c13-87f4-a411fcc0d44d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020694E97E90>]}
+[0m16:25:40.986293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '521630b5-f9bf-4c13-87f4-a411fcc0d44d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020690A1D8D0>]}
+[0m16:25:40.988940 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:25:41.346904 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m16:25:41.434360 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m16:25:41.434360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '521630b5-f9bf-4c13-87f4-a411fcc0d44d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002069465A310>]}
+[0m16:25:43.597504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '521630b5-f9bf-4c13-87f4-a411fcc0d44d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020696524390>]}
+[0m16:25:43.601238 [info ] [MainThread]: Performance info: C:\Users\kboland\Mueller_git\data-analysis-mueller\target\perf_info.json
+[0m16:25:43.685967 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:25:43.688628 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:25:43.689738 [debug] [MainThread]: Command `dbt parse` succeeded at 16:25:43.689738 after 3.04 seconds
+[0m16:25:43.689738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020694D53A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002068FD02B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002068FD02C10>]}
+[0m16:25:43.690832 [debug] [MainThread]: Flushing usage events
+[0m16:25:44.193315 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:46.379615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A7330DF390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A7330DD9D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A7330DF950>]}
+
+
+============================== 16:25:46.383606 | 8f10c3e2-29f9-42ad-bcbb-97779661d435 ==============================
+[0m16:25:46.383606 [info ] [MainThread]: Running with dbt=1.10.11
+[0m16:25:46.384604 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt compile', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'log_path': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True'}
+[0m16:25:46.571146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8f10c3e2-29f9-42ad-bcbb-97779661d435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A733368650>]}
+[0m16:25:46.633417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8f10c3e2-29f9-42ad-bcbb-97779661d435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A72DD6D4D0>]}
+[0m16:25:46.634414 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:25:46.996348 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m16:25:47.243043 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:25:47.244046 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:25:47.282012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8f10c3e2-29f9-42ad-bcbb-97779661d435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A7337FC210>]}
+[0m16:25:47.368300 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:25:47.370401 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:25:47.391421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8f10c3e2-29f9-42ad-bcbb-97779661d435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A7337C87D0>]}
+[0m16:25:47.392748 [info ] [MainThread]: Found 2 models, 4 data tests, 826 macros
+[0m16:25:47.392748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8f10c3e2-29f9-42ad-bcbb-97779661d435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A7335F1210>]}
+[0m16:25:47.394971 [info ] [MainThread]: 
+[0m16:25:47.396020 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:25:47.396020 [info ] [MainThread]: 
+[0m16:25:47.397528 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:25:47.400967 [debug] [ThreadPool]: Acquiring new postgres connection 'list_Mueller_dev_mueller'
+[0m16:25:47.532912 [debug] [ThreadPool]: Using postgres connection "list_Mueller_dev_mueller"
+[0m16:25:47.532912 [debug] [ThreadPool]: On list_Mueller_dev_mueller: BEGIN
+[0m16:25:47.533909 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:25:47.890069 [debug] [ThreadPool]: SQL status: BEGIN in 0.356 seconds
+[0m16:25:47.891233 [debug] [ThreadPool]: Using postgres connection "list_Mueller_dev_mueller"
+[0m16:25:47.893650 [debug] [ThreadPool]: On list_Mueller_dev_mueller: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "connection_name": "list_Mueller_dev_mueller"} */
+select
+      'Mueller' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_mueller'
+    union all
+    select
+      'Mueller' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_mueller'
+    union all
+    select
+      'Mueller' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_mueller'
+  
+[0m16:25:47.931314 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.035 seconds
+[0m16:25:47.932809 [debug] [ThreadPool]: On list_Mueller_dev_mueller: ROLLBACK
+[0m16:25:47.967547 [debug] [ThreadPool]: On list_Mueller_dev_mueller: Close
+[0m16:25:47.975647 [debug] [MainThread]: Using postgres connection "master"
+[0m16:25:47.975647 [debug] [MainThread]: On master: BEGIN
+[0m16:25:47.976681 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:25:48.328171 [debug] [MainThread]: SQL status: BEGIN in 0.352 seconds
+[0m16:25:48.331674 [debug] [MainThread]: Using postgres connection "master"
+[0m16:25:48.333668 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m16:25:48.372761 [debug] [MainThread]: SQL status: SELECT 17 in 0.037 seconds
+[0m16:25:48.374758 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8f10c3e2-29f9-42ad-bcbb-97779661d435', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A733B59DD0>]}
+[0m16:25:48.375756 [debug] [MainThread]: On master: ROLLBACK
+[0m16:25:48.407818 [debug] [MainThread]: On master: Close
+[0m16:25:48.417929 [debug] [Thread-1 (]: Began running node model.mueller_analysis.my_first_dbt_model
+[0m16:25:48.419991 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.mueller_analysis.my_first_dbt_model'
+[0m16:25:48.419991 [debug] [Thread-1 (]: Began compiling node model.mueller_analysis.my_first_dbt_model
+[0m16:25:48.429890 [debug] [Thread-1 (]: Writing injected SQL for node "model.mueller_analysis.my_first_dbt_model"
+[0m16:25:48.435529 [debug] [Thread-1 (]: Began executing node model.mueller_analysis.my_first_dbt_model
+[0m16:25:48.436533 [debug] [Thread-1 (]: Finished running node model.mueller_analysis.my_first_dbt_model
+[0m16:25:48.436533 [debug] [Thread-3 (]: Began running node model.mueller_analysis.my_second_dbt_model
+[0m16:25:48.438040 [debug] [Thread-4 (]: Began running node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:25:48.438040 [debug] [Thread-2 (]: Began running node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:25:48.439433 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.mueller_analysis.my_second_dbt_model'
+[0m16:25:48.440430 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m16:25:48.440720 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321'
+[0m16:25:48.441491 [debug] [Thread-3 (]: Began compiling node model.mueller_analysis.my_second_dbt_model
+[0m16:25:48.442086 [debug] [Thread-4 (]: Began compiling node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:25:48.442758 [debug] [Thread-2 (]: Began compiling node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:25:48.445984 [debug] [Thread-3 (]: Writing injected SQL for node "model.mueller_analysis.my_second_dbt_model"
+[0m16:25:48.456360 [debug] [Thread-4 (]: Writing injected SQL for node "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:25:48.463359 [debug] [Thread-2 (]: Writing injected SQL for node "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"
+[0m16:25:48.464803 [debug] [Thread-3 (]: Began executing node model.mueller_analysis.my_second_dbt_model
+[0m16:25:48.465362 [debug] [Thread-4 (]: Began executing node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:25:48.466375 [debug] [Thread-3 (]: Finished running node model.mueller_analysis.my_second_dbt_model
+[0m16:25:48.466375 [debug] [Thread-2 (]: Began executing node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:25:48.467881 [debug] [Thread-4 (]: Finished running node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:25:48.469066 [debug] [Thread-1 (]: Began running node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:25:48.470183 [debug] [Thread-2 (]: Finished running node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:25:48.470720 [debug] [Thread-3 (]: Began running node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:25:48.471162 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.mueller_analysis.my_first_dbt_model, now test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778)
+[0m16:25:48.472162 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.mueller_analysis.my_second_dbt_model, now test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493)
+[0m16:25:48.472905 [debug] [Thread-1 (]: Began compiling node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:25:48.473510 [debug] [Thread-3 (]: Began compiling node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:25:48.478242 [debug] [Thread-1 (]: Writing injected SQL for node "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:25:48.483676 [debug] [Thread-3 (]: Writing injected SQL for node "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:25:48.484391 [debug] [Thread-1 (]: Began executing node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:25:48.485411 [debug] [Thread-3 (]: Began executing node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:25:48.486479 [debug] [Thread-1 (]: Finished running node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:25:48.486479 [debug] [Thread-3 (]: Finished running node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:25:48.489007 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:25:48.489007 [debug] [MainThread]: Connection 'list_Mueller_dev_mueller' was properly closed.
+[0m16:25:48.490155 [debug] [MainThread]: Connection 'test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+[0m16:25:48.490155 [debug] [MainThread]: Connection 'test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m16:25:48.490155 [debug] [MainThread]: Connection 'test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710' was properly closed.
+[0m16:25:48.491274 [debug] [MainThread]: Connection 'test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m16:25:48.492603 [debug] [MainThread]: Command end result
+[0m16:25:48.529407 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:25:48.532577 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:25:48.540111 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\run_results.json
+[0m16:25:48.541326 [debug] [MainThread]: Command `dbt compile` succeeded at 16:25:48.540111 after 2.24 seconds
+[0m16:25:48.541326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A733137E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A731D87F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A72D022C10>]}
+[0m16:25:48.542366 [debug] [MainThread]: Flushing usage events
+[0m16:25:49.053418 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:25:51.247803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7F0DC250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7D418DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7F110E50>]}
+
+
+============================== 16:25:51.252293 | 2d892761-47c4-4722-8ef3-f7c06177be51 ==============================
+[0m16:25:51.252293 [info ] [MainThread]: Running with dbt=1.10.11
+[0m16:25:51.253355 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'cache_selected_only': 'False', 'target_path': 'None', 'use_colors': 'True', 'invocation_command': 'dbt test', 'log_format': 'default', 'version_check': 'True', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'quiet': 'False', 'empty': 'None', 'log_path': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'indirect_selection': 'eager', 'profiles_dir': 'C:\\Users\\kboland\\Mueller_git\\data-analysis-mueller', 'static_parser': 'True', 'write_json': 'True'}
+[0m16:25:51.456805 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2d892761-47c4-4722-8ef3-f7c06177be51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7F2970D0>]}
+[0m16:25:51.520006 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2d892761-47c4-4722-8ef3-f7c06177be51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B79E01650>]}
+[0m16:25:51.522129 [info ] [MainThread]: Registered adapter: postgres=1.9.1
+[0m16:25:51.917662 [debug] [MainThread]: checksum: 5335e1629744fab92fa7809c625edbb36f0d7063a879d6215c971798f27e66f9, vars: {}, profile: , target: , version: 1.10.11
+[0m16:25:52.158428 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:25:52.158428 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:25:52.197871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2d892761-47c4-4722-8ef3-f7c06177be51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7F80D950>]}
+[0m16:25:52.285961 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:25:52.288635 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:25:52.317554 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2d892761-47c4-4722-8ef3-f7c06177be51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7F9E3210>]}
+[0m16:25:52.318061 [info ] [MainThread]: Found 2 models, 4 data tests, 826 macros
+[0m16:25:52.319241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d892761-47c4-4722-8ef3-f7c06177be51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7F5B5710>]}
+[0m16:25:52.321250 [info ] [MainThread]: 
+[0m16:25:52.321250 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m16:25:52.322254 [info ] [MainThread]: 
+[0m16:25:52.323259 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:25:52.326332 [debug] [ThreadPool]: Acquiring new postgres connection 'list_Mueller_dev_mueller'
+[0m16:25:52.457999 [debug] [ThreadPool]: Using postgres connection "list_Mueller_dev_mueller"
+[0m16:25:52.459033 [debug] [ThreadPool]: On list_Mueller_dev_mueller: BEGIN
+[0m16:25:52.460186 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:25:52.797314 [debug] [ThreadPool]: SQL status: BEGIN in 0.337 seconds
+[0m16:25:52.797853 [debug] [ThreadPool]: Using postgres connection "list_Mueller_dev_mueller"
+[0m16:25:52.798971 [debug] [ThreadPool]: On list_Mueller_dev_mueller: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "connection_name": "list_Mueller_dev_mueller"} */
+select
+      'Mueller' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev_mueller'
+    union all
+    select
+      'Mueller' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev_mueller'
+    union all
+    select
+      'Mueller' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'dev_mueller'
+  
+[0m16:25:52.834628 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.036 seconds
+[0m16:25:52.836832 [debug] [ThreadPool]: On list_Mueller_dev_mueller: ROLLBACK
+[0m16:25:52.870232 [debug] [ThreadPool]: On list_Mueller_dev_mueller: Close
+[0m16:25:52.878734 [debug] [MainThread]: Using postgres connection "master"
+[0m16:25:52.879774 [debug] [MainThread]: On master: BEGIN
+[0m16:25:52.880817 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:25:53.209349 [debug] [MainThread]: SQL status: BEGIN in 0.328 seconds
+[0m16:25:53.209349 [debug] [MainThread]: Using postgres connection "master"
+[0m16:25:53.211396 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "connection_name": "master"} */
+select distinct
+        dependent_namespace.nspname as dependent_schema,
+        dependent_class.relname as dependent_name,
+        referenced_namespace.nspname as referenced_schema,
+        referenced_class.relname as referenced_name
+
+    -- Query for views: views are entries in pg_class with an entry in pg_rewrite, but we avoid
+    -- a seq scan on pg_rewrite by leveraging the fact there is an "internal" row in pg_depend for
+    -- the view...
+    from pg_class as dependent_class
+    join pg_namespace as dependent_namespace on dependent_namespace.oid = dependent_class.relnamespace
+    join pg_depend as dependent_depend on dependent_depend.refobjid = dependent_class.oid
+        and dependent_depend.classid = 'pg_rewrite'::regclass
+        and dependent_depend.refclassid = 'pg_class'::regclass
+        and dependent_depend.deptype = 'i'
+
+    -- ... and via pg_depend (that has a row per column, hence the need for "distinct" above, and
+    -- making sure to exclude the internal row to avoid a view appearing to depend on itself)...
+    join pg_depend as joining_depend on joining_depend.objid = dependent_depend.objid
+        and joining_depend.classid = 'pg_rewrite'::regclass
+        and joining_depend.refclassid = 'pg_class'::regclass
+        and joining_depend.refobjid != dependent_depend.refobjid
+
+    -- ... we can find the tables they query from in pg_class, but excluding system tables. Note we
+    -- don't need need to exclude _dependent_ system tables, because they only query from other
+    -- system tables, and so are automatically excluded by excluding _referenced_ system tables
+    join pg_class as referenced_class on referenced_class.oid = joining_depend.refobjid
+    join pg_namespace as referenced_namespace on referenced_namespace.oid = referenced_class.relnamespace
+        and referenced_namespace.nspname != 'information_schema'
+        and referenced_namespace.nspname not like 'pg\_%'
+
+    order by
+        dependent_schema, dependent_name, referenced_schema, referenced_name;
+[0m16:25:53.249329 [debug] [MainThread]: SQL status: SELECT 17 in 0.037 seconds
+[0m16:25:53.253749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2d892761-47c4-4722-8ef3-f7c06177be51', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7F2DBF90>]}
+[0m16:25:53.255842 [debug] [MainThread]: On master: ROLLBACK
+[0m16:25:53.289293 [debug] [MainThread]: Using postgres connection "master"
+[0m16:25:53.290326 [debug] [MainThread]: On master: BEGIN
+[0m16:25:53.356253 [debug] [MainThread]: SQL status: BEGIN in 0.064 seconds
+[0m16:25:53.357804 [debug] [MainThread]: On master: COMMIT
+[0m16:25:53.358959 [debug] [MainThread]: Using postgres connection "master"
+[0m16:25:53.360008 [debug] [MainThread]: On master: COMMIT
+[0m16:25:53.393175 [debug] [MainThread]: SQL status: COMMIT in 0.032 seconds
+[0m16:25:53.394183 [debug] [MainThread]: On master: Close
+[0m16:25:53.404946 [debug] [Thread-1 (]: Began running node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:25:53.405948 [debug] [Thread-2 (]: Began running node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:25:53.407125 [debug] [Thread-3 (]: Began running node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:25:53.407666 [debug] [Thread-4 (]: Began running node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:25:53.408979 [info ] [Thread-1 (]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m16:25:53.409988 [info ] [Thread-2 (]: 2 of 4 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m16:25:53.410999 [info ] [Thread-3 (]: 3 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m16:25:53.413016 [info ] [Thread-4 (]: 4 of 4 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m16:25:53.414191 [debug] [Thread-1 (]: Acquiring new postgres connection 'test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m16:25:53.416221 [debug] [Thread-2 (]: Acquiring new postgres connection 'test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778'
+[0m16:25:53.417735 [debug] [Thread-3 (]: Acquiring new postgres connection 'test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321'
+[0m16:25:53.418788 [debug] [Thread-4 (]: Acquiring new postgres connection 'test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493'
+[0m16:25:53.420810 [debug] [Thread-1 (]: Began compiling node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:25:53.421815 [debug] [Thread-2 (]: Began compiling node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:25:53.422863 [debug] [Thread-3 (]: Began compiling node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:25:53.423964 [debug] [Thread-4 (]: Began compiling node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:25:53.445246 [debug] [Thread-1 (]: Writing injected SQL for node "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:25:53.450444 [debug] [Thread-2 (]: Writing injected SQL for node "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:25:53.457842 [debug] [Thread-3 (]: Writing injected SQL for node "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"
+[0m16:25:53.462671 [debug] [Thread-4 (]: Writing injected SQL for node "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:25:53.464177 [debug] [Thread-1 (]: Began executing node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:25:53.464177 [debug] [Thread-2 (]: Began executing node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:25:53.465298 [debug] [Thread-3 (]: Began executing node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:25:53.482412 [debug] [Thread-1 (]: Writing runtime sql for node "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:25:53.483374 [debug] [Thread-4 (]: Began executing node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:25:53.486651 [debug] [Thread-2 (]: Writing runtime sql for node "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:25:53.489662 [debug] [Thread-3 (]: Writing runtime sql for node "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"
+[0m16:25:53.493059 [debug] [Thread-4 (]: Writing runtime sql for node "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:25:53.493059 [debug] [Thread-1 (]: Using postgres connection "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:25:53.494120 [debug] [Thread-2 (]: Using postgres connection "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:25:53.495252 [debug] [Thread-3 (]: Using postgres connection "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"
+[0m16:25:53.495252 [debug] [Thread-1 (]: On test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710: BEGIN
+[0m16:25:53.496671 [debug] [Thread-4 (]: Using postgres connection "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:25:53.496671 [debug] [Thread-2 (]: On test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778: BEGIN
+[0m16:25:53.497676 [debug] [Thread-3 (]: On test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321: BEGIN
+[0m16:25:53.498627 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:25:53.498627 [debug] [Thread-4 (]: On test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493: BEGIN
+[0m16:25:53.499704 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m16:25:53.499704 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m16:25:53.500697 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m16:25:53.811741 [debug] [Thread-1 (]: SQL status: BEGIN in 0.314 seconds
+[0m16:25:53.813839 [debug] [Thread-1 (]: Using postgres connection "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m16:25:53.815998 [debug] [Thread-1 (]: On test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "node_id": "test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from "Mueller"."dev_mueller"."my_first_dbt_model"
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:25:53.818008 [debug] [Thread-4 (]: SQL status: BEGIN in 0.317 seconds
+[0m16:25:53.820397 [debug] [Thread-4 (]: Using postgres connection "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"
+[0m16:25:53.821498 [debug] [Thread-4 (]: On test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "node_id": "test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Mueller"."dev_mueller"."my_second_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:25:53.826185 [debug] [Thread-2 (]: SQL status: BEGIN in 0.327 seconds
+[0m16:25:53.826185 [debug] [Thread-2 (]: Using postgres connection "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"
+[0m16:25:53.827724 [debug] [Thread-2 (]: On test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "node_id": "test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from "Mueller"."dev_mueller"."my_second_dbt_model"
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:25:53.830639 [debug] [Thread-3 (]: SQL status: BEGIN in 0.330 seconds
+[0m16:25:53.831658 [debug] [Thread-3 (]: Using postgres connection "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"
+[0m16:25:53.831658 [debug] [Thread-3 (]: On test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.10.11", "profile_name": "mueller_analysis", "target_name": "dev", "node_id": "test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from "Mueller"."dev_mueller"."my_first_dbt_model"
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m16:25:53.848846 [debug] [Thread-1 (]: Postgres adapter: Postgres error: relation "dev_mueller.my_first_dbt_model" does not exist
+LINE 17: from "Mueller"."dev_mueller"."my_first_dbt_model"
+              ^
+
+[0m16:25:53.850236 [debug] [Thread-1 (]: On test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710: ROLLBACK
+[0m16:25:53.855392 [debug] [Thread-4 (]: Postgres adapter: Postgres error: relation "dev_mueller.my_second_dbt_model" does not exist
+LINE 18: from "Mueller"."dev_mueller"."my_second_dbt_model"
+              ^
+
+[0m16:25:53.856432 [debug] [Thread-4 (]: On test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493: ROLLBACK
+[0m16:25:53.860467 [debug] [Thread-2 (]: Postgres adapter: Postgres error: relation "dev_mueller.my_second_dbt_model" does not exist
+LINE 17: from "Mueller"."dev_mueller"."my_second_dbt_model"
+              ^
+
+[0m16:25:53.861506 [debug] [Thread-2 (]: On test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778: ROLLBACK
+[0m16:25:53.864952 [debug] [Thread-3 (]: Postgres adapter: Postgres error: relation "dev_mueller.my_first_dbt_model" does not exist
+LINE 18: from "Mueller"."dev_mueller"."my_first_dbt_model"
+              ^
+
+[0m16:25:53.865993 [debug] [Thread-3 (]: On test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321: ROLLBACK
+[0m16:25:53.882274 [debug] [Thread-1 (]: On test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m16:25:53.890011 [debug] [Thread-4 (]: On test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m16:25:53.897827 [debug] [Thread-2 (]: On test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m16:25:53.902157 [debug] [Thread-3 (]: On test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321: Close
+[0m16:25:53.916799 [debug] [Thread-3 (]: Database Error in test unique_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m16:25:53.917795 [debug] [Thread-4 (]: Database Error in test unique_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m16:25:53.919520 [debug] [Thread-2 (]: Database Error in test not_null_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m16:25:53.921528 [debug] [Thread-1 (]: Database Error in test not_null_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m16:25:53.918299 [error] [Thread-3 (]: 3 of 4 ERROR unique_my_first_dbt_model_id ...................................... [[31mERROR[0m in 0.50s]
+[0m16:25:53.922532 [error] [Thread-4 (]: 4 of 4 ERROR unique_my_second_dbt_model_id ..................................... [[31mERROR[0m in 0.50s]
+[0m16:25:53.922532 [error] [Thread-2 (]: 2 of 4 ERROR not_null_my_second_dbt_model_id ................................... [[31mERROR[0m in 0.51s]
+[0m16:25:53.923536 [error] [Thread-1 (]: 1 of 4 ERROR not_null_my_first_dbt_model_id .................................... [[31mERROR[0m in 0.51s]
+[0m16:25:53.924540 [debug] [Thread-3 (]: Finished running node test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321
+[0m16:25:53.925664 [debug] [Thread-4 (]: Finished running node test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493
+[0m16:25:53.926669 [debug] [Thread-2 (]: Finished running node test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778
+[0m16:25:53.927667 [debug] [Thread-1 (]: Finished running node test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710
+[0m16:25:53.928174 [debug] [Thread-7 (]: Marking all children of 'test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321' to be skipped because of status 'error'.  Reason: Database Error in test unique_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_first_dbt_model_id.sql.
+[0m16:25:53.930347 [debug] [Thread-7 (]: Marking all children of 'test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493' to be skipped because of status 'error'.  Reason: Database Error in test unique_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_second_dbt_model_id.sql.
+[0m16:25:53.931449 [debug] [Thread-7 (]: Marking all children of 'test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778' to be skipped because of status 'error'.  Reason: Database Error in test not_null_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_second_dbt_model_id.sql.
+[0m16:25:53.931449 [debug] [Thread-7 (]: Marking all children of 'test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710' to be skipped because of status 'error'.  Reason: Database Error in test not_null_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_first_dbt_model_id.sql.
+[0m16:25:53.933825 [debug] [MainThread]: Using postgres connection "master"
+[0m16:25:53.934829 [debug] [MainThread]: On master: BEGIN
+[0m16:25:53.934829 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:25:54.251405 [debug] [MainThread]: SQL status: BEGIN in 0.317 seconds
+[0m16:25:54.252439 [debug] [MainThread]: On master: COMMIT
+[0m16:25:54.252439 [debug] [MainThread]: Using postgres connection "master"
+[0m16:25:54.253615 [debug] [MainThread]: On master: COMMIT
+[0m16:25:54.289126 [debug] [MainThread]: SQL status: COMMIT in 0.035 seconds
+[0m16:25:54.289126 [debug] [MainThread]: On master: Close
+[0m16:25:54.290310 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:25:54.290310 [debug] [MainThread]: Connection 'list_Mueller_dev_mueller' was properly closed.
+[0m16:25:54.291337 [debug] [MainThread]: Connection 'test.mueller_analysis.not_null_my_first_dbt_model_id.5fb22c2710' was properly closed.
+[0m16:25:54.291337 [debug] [MainThread]: Connection 'test.mueller_analysis.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+[0m16:25:54.292476 [debug] [MainThread]: Connection 'test.mueller_analysis.unique_my_first_dbt_model_id.16e066b321' was properly closed.
+[0m16:25:54.292476 [debug] [MainThread]: Connection 'test.mueller_analysis.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m16:25:54.293499 [info ] [MainThread]: 
+[0m16:25:54.293499 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 1.97 seconds (1.97s).
+[0m16:25:54.294674 [debug] [MainThread]: Command end result
+[0m16:25:54.334241 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\manifest.json
+[0m16:25:54.336313 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\semantic_manifest.json
+[0m16:25:54.344301 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\kboland\Mueller_git\data-analysis-mueller\target\run_results.json
+[0m16:25:54.344301 [info ] [MainThread]: 
+[0m16:25:54.345334 [info ] [MainThread]: [31mCompleted with 4 errors, 0 partial successes, and 0 warnings:[0m
+[0m16:25:54.345334 [info ] [MainThread]: 
+[0m16:25:54.346568 [error] [MainThread]: [31mFailure in test unique_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)[0m
+[0m16:25:54.346568 [error] [MainThread]:   Database Error in test unique_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m16:25:54.347519 [info ] [MainThread]: 
+[0m16:25:54.348023 [info ] [MainThread]:   compiled code at target\compiled\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m16:25:54.349100 [info ] [MainThread]: 
+[0m16:25:54.349100 [error] [MainThread]: [31mFailure in test unique_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)[0m
+[0m16:25:54.350180 [error] [MainThread]:   Database Error in test unique_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 18: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m16:25:54.350180 [info ] [MainThread]: 
+[0m16:25:54.351266 [info ] [MainThread]:   compiled code at target\compiled\mueller_analysis\mueller_analysis/models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m16:25:54.351266 [info ] [MainThread]: 
+[0m16:25:54.352292 [error] [MainThread]: [31mFailure in test not_null_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)[0m
+[0m16:25:54.352292 [error] [MainThread]:   Database Error in test not_null_my_second_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_second_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_second_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m16:25:54.353334 [info ] [MainThread]: 
+[0m16:25:54.353334 [info ] [MainThread]:   compiled code at target\compiled\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m16:25:54.354418 [info ] [MainThread]: 
+[0m16:25:54.354418 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)[0m
+[0m16:25:54.355457 [error] [MainThread]:   Database Error in test not_null_my_first_dbt_model_id (mueller_analysis/models\example\schema.yml)
+  relation "dev_mueller.my_first_dbt_model" does not exist
+  LINE 17: from "Mueller"."dev_mueller"."my_first_dbt_model"
+                ^
+  compiled code at target\run\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m16:25:54.356576 [info ] [MainThread]: 
+[0m16:25:54.356576 [info ] [MainThread]:   compiled code at target\compiled\mueller_analysis\mueller_analysis/models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m16:25:54.357598 [info ] [MainThread]: 
+[0m16:25:54.357598 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=4 SKIP=0 NO-OP=0 TOTAL=4
+[0m16:25:54.358707 [debug] [MainThread]: Command `dbt test` failed at 16:25:54.358707 after 3.19 seconds
+[0m16:25:54.359746 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B790B2B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B790B2C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B7F0D0C50>]}
+[0m16:25:54.359746 [debug] [MainThread]: Flushing usage events
+[0m16:25:54.926320 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m10:15:09.741478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7AB3D1810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7AB3D1B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7AB3D2910>]}
+
+
+============================== 10:15:09.747950 | 744c3022-6d96-4a75-8653-db5244e7f6c2 ==============================
+[0m10:15:09.747950 [info ] [MainThread]: Running with dbt=1.10.11
+[0m10:15:09.747950 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'profiles_dir': 'c:\\Users\\kboland\\Mueller_git\\data-analysis-mueller', 'send_anonymous_usage_stats': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'target_path': 'None', 'version_check': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'warn_error': 'None', 'introspect': 'True', 'debug': 'False', 'printer_width': '80', 'fail_fast': 'False', 'no_print': 'None', 'use_experimental_parser': 'False', 'quiet': 'False', 'empty': 'None', 'log_cache_events': 'False', 'log_path': 'c:\\Users\\kboland\\Mueller_git\\data-analysis-mueller\\logs', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m10:15:09.929417 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '744c3022-6d96-4a75-8653-db5244e7f6c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7AB51E9D0>]}
+[0m10:15:10.141544 [debug] [MainThread]: Set downloads directory='C:\Users\kboland\AppData\Local\Temp\dbt-downloads-e4y9qsg9'
+[0m10:15:10.142765 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m10:15:10.940216 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m10:15:10.942910 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m10:15:11.426614 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m10:15:11.439723 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json
+[0m10:15:11.970169 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json 200
+[0m10:15:11.974861 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json
+[0m10:15:12.521329 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json 200
+[0m10:15:12.526006 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m10:15:13.359683 [info ] [MainThread]: Installed from version 1.3.1
+[0m10:15:13.359683 [info ] [MainThread]: Up to date!
+[0m10:15:13.359683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '744c3022-6d96-4a75-8653-db5244e7f6c2', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7AB3D1550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7AB51F550>]}
+[0m10:15:13.359683 [info ] [MainThread]: Installing metaplane/dbt_expectations
+[0m10:15:14.609315 [info ] [MainThread]: Installed from version 0.10.9
+[0m10:15:14.609786 [info ] [MainThread]: Up to date!
+[0m10:15:14.609786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '744c3022-6d96-4a75-8653-db5244e7f6c2', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7AB581550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7AB581310>]}
+[0m10:15:14.609786 [info ] [MainThread]: Installing godatadriven/dbt_date
+[0m10:15:15.310448 [info ] [MainThread]: Installed from version 0.16.1
+[0m10:15:15.310448 [info ] [MainThread]: Up to date!
+[0m10:15:15.311483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '744c3022-6d96-4a75-8653-db5244e7f6c2', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7AB087E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7AB51F290>]}
+[0m10:15:15.315072 [debug] [MainThread]: Command `cli deps` succeeded at 10:15:15.313629 after 5.65 seconds
+[0m10:15:15.315072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7A2D741D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7A2D74250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7A2D74590>]}
+[0m10:15:15.316241 [debug] [MainThread]: Flushing usage events
+[0m10:15:15.915461 [debug] [MainThread]: An error was encountered while trying to flush usage events
