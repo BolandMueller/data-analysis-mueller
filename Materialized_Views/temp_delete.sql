@@ -1,0 +1,3 @@
+
+
+DROP MATERIALIZED VIEW IF EXISTS dev_mueller.test1;

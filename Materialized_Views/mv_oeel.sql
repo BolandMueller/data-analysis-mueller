@@ -1,3 +1,11 @@
+-- First drop the indexes on the materialized view if they exist
+DROP INDEX IF EXISTS dev.idx_mv_oeel_dctransdate;
+DROP INDEX IF EXISTS dev.idx_mv_oeel_invoicedt;
+DROP INDEX IF EXISTS dev.idx_mv_oeel_uniq;
+
+-- Then drop the materialized view itself
+DROP MATERIALIZED VIEW IF EXISTS dev.mv_oeel;
+
 -- dev.mv_oeel source
 
 CREATE MATERIALIZED VIEW dev.mv_oeel
@@ -12,7 +20,7 @@ AS SELECT COALESCE(oeel.invoicedt, '1990-01-01'::date) AS invoicedt,
     icsd.city::character varying(32) AS whsecity,
     upper(oeel.slsrepout::text)::character(4) AS slsrepout,
     upper(oeel.transtype::text)::character(2) AS transtype,
-    upper(oeel.prodcat::character(4)::text) AS prodcat,
+    upper(oeel.prodcat::text)::character(4) AS prodcat,
     upper(oeel.shipprod::text)::character varying(24) AS shipprod,
     oeel.price::numeric(12,4) AS price,
         CASE
@@ -29,7 +37,7 @@ AS SELECT COALESCE(oeel.invoicedt, '1990-01-01'::date) AS invoicedt,
             WHEN oeel.returnfl = 1 THEN '-1'::integer
             ELSE 1
         END::numeric, 4)::numeric(12,4) AS stkqtyship,
-    oeel.unit,
+    upper(oeel.unit::text)::character varying(4) AS unit,
     oeel.unitconv,
     round(oeel.netamt *
         CASE
@@ -41,7 +49,7 @@ AS SELECT COALESCE(oeel.invoicedt, '1990-01-01'::date) AS invoicedt,
             WHEN oeel.returnfl = 1 THEN '-1'::integer
             ELSE 1
         END::numeric, 4)::numeric(12,4) AS prodcost,
-    oeel.prodline,
+    upper(oeel.prodline::text)::character(6) AS prodline,
     oeel.vendno,
     COALESCE(( SELECT "SXFamilyGroup"."Short"
            FROM "SXFamilyGroup"
