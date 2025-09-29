@@ -33,6 +33,7 @@ AS SELECT upper(icsw.prod::text)::character varying(24) AS prod,
     upper(icsw.statustype::text)::character(1) AS statustype,
     icsw.usgmths,
     icsw.minhits,
+    icsw.arpvendno,
     CURRENT_TIMESTAMP AS "lastUpdate"
    FROM icsw
   WHERE icsw.cono = 1
